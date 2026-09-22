@@ -1,0 +1,12 @@
+#backend.cpp
+Source code
+#port.cpp
+port
+#reader.cpp
+Lexer/reader
+#parser.cpp
+parser
+#storage.cpp
+storage
+
+Goal: Make #test.flow evaluate 1+2 correctly, followed up with "Hello world!" in console
