@@ -54,4 +54,6 @@ enum Tokens = {
 
 int assignSubject(varLine) {
     // get the subject name of the subject variable, and attach it to the data type listed in tokens. Furthermore, attach nested modifiers and also the data assigned to the subject.
+
+    // Where to start
 }
