@@ -1,10 +1,39 @@
-// I don't even have anything here wdym include error
-
 #include <iostream>
+#include "txt.flow"
+#include <fstream>
+#include <sstream>
+#include <stdexcept>
 #include <string>
-#include <txt.flow>
 using namespace std;
 
-// Goal: make it reader export the message below, and make sure it ignores the comment line on line 1
+std::string readTextFile(const std::string& path) {
+	std::ifstream file(path);
+	if (!file) {
+		return "cannot find file";
+	}
 
+	std::ostringstream contents;
+	contents << file.rdbuf();
+    lex(contents);
+	return contents.str();
+}
 
+class lex(content) {
+    // var block construction
+    class construct {
+        class data(type, name, value = {}, modifier = {}) {
+            type: [
+                var = "?variable",
+                let = "?let",
+                const = "?constant",
+                gl = "?global",
+                conf = "?confined",
+                int = "?integer",
+                bool = "?boolean",
+                dt = "?data",
+            ],
+            
+        }
+        // detect semicolon to end current function.
+    }
+}
