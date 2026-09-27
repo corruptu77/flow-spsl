@@ -1,0 +1,3 @@
+// Goal: make it reader export the message below, and make sure it ignores this line (comment line)
+
+Hello world!
