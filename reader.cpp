@@ -1,3 +1,5 @@
+/*
+
 #include <iostream>
 #include "txt.flow"
 #include <fstream>
@@ -37,3 +39,5 @@ class lex(content) {
         // detect semicolon to end current function.
     }
 }
+
+*/
